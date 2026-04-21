@@ -8,7 +8,7 @@ export const Footer = () => {
       </p>
       <p>
         Du vises lige nu priserne for
-        <span>Øst Darnmark</span>
+        <span> Øst Darnmark</span>
       </p>
     </footer>
   );
