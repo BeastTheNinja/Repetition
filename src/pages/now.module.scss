@@ -1,0 +1,19 @@
+.nowStyling{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: 'center'; 
+    color: '#EBEBEB';
+    font-size: 32;
+    font-family: 'Roboto';
+    font-weight: '300';
+    word-wrap: 'break-word';
+    padding: 5rem;
+    margin: 5rem;
+
+    div{
+        display: flex;
+        
+    }
+}
