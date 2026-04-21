@@ -1,19 +1,86 @@
-.nowStyling{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: 'center'; 
-    color: '#EBEBEB';
-    font-size: 32;
-    font-family: 'Roboto';
-    font-weight: '300';
-    word-wrap: 'break-word';
-    padding: 5rem;
-    margin: 5rem;
+.nowStyling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ebebeb;
+  font-family: "Roboto";
+  font-weight: 300;
+  padding: 3rem;
 
-    div{
-        display: flex;
-        
-    }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  h4 {
+    color: #55ec20;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+}
+
+.circleWrapper {
+  position: relative;
+  width: 17.5rem;
+  height: 17.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Circles */
+.circleOuter,
+.circleMiddle,
+.circleInner {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circleOuter {
+  width: 100%;
+  height: 100%;
+  background: #201e1e;
+  box-shadow:
+    inset 0 0 0.5rem rgba(255, 255, 255, 0.25),
+    0 0 0.25rem rgba(0, 0, 0, 0.25);
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+.circleMiddle {
+  width: 85%;
+  height: 85%;
+  border: 0.0625rem dashed #55ec2066;
+}
+
+.circleInner {
+  width: 70%;
+  height: 70%;
+  border: 0.0625rem dashed #55ec20cc;
+}
+
+.price {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #55ec20;
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.unit {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.cogIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: auto;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }

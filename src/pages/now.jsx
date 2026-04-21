@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { findTimeWindow } from "../utils/findTimeWindow";
 import { formatTime } from "../utils/formatTime";
-import style from './now.module.scss'
+import style from "./now.module.scss";
+import CogIcon from '../assets/icons/iconcog.svg'
 
 export const Now = () => {
   const [nowTime, setNowTime] = useState(undefined);
@@ -43,18 +44,26 @@ export const Now = () => {
   }, []);
 
   return (
-    <section className={style.nowStyling}>
-      <h1>Elprisen lige nu</h1>
-      <div>
-        <div>
-          <div>
-            <h3> ${nowTime?.DKK_per_kWh} kr pr. KWh</h3>
+    <>
+      <img className={style.cogIcon} src={CogIcon} alt="indstillings knap" />
+      <section className={style.nowStyling}>
+        <h1>Elprisen lige nu</h1>
+
+        <div className={style.circleWrapper}>
+          <div className={style.circleOuter}></div>
+          <div className={style.circleMiddle}></div>
+          <div className={style.circleInner}></div>
+
+          <div className={style.price}>
+            <span className={style.value}>{nowTime?.DKK_per_kWh} KR</span>
+            <span className={style.unit}>PR. KWH</span>
           </div>
         </div>
-      </div>
-      <h4>
-        {formatTime(nowTime?.time_start)}-{formatTime(nowTime?.time_end)}
-      </h4>
-    </section>
+
+        <h4>
+          {formatTime(nowTime?.time_start)} - {formatTime(nowTime?.time_end)}
+        </h4>
+      </section>
+    </>
   );
 };
