@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import navIcon from "../../assets/NavIcon.svg";
 import style from "./Navbar.module.scss";
 
@@ -7,9 +7,30 @@ export const NavBar = () => {
     <nav className={style.navStyling}>
       <img src={navIcon} alt="Navigation Icon" />
       <div>
-        <Link to="/overview"> Oversigt </Link>
-        <Link to="/"> Lige Nu </Link>
-        <Link to="/history"> History </Link>
+        <NavLink
+          to="/overview"
+          className={({ isActive }) =>
+            isActive ? style.activeLink : style.link
+          }>
+          Oversigt
+        </NavLink>
+
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) =>
+            isActive ? style.activeLink : style.link
+          }>
+          Lige Nu
+        </NavLink>
+
+        <NavLink
+          to="/history"
+          className={({ isActive }) =>
+            isActive ? style.activeLink : style.link
+          }>
+          History
+        </NavLink>
       </div>
     </nav>
   );

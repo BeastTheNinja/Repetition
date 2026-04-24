@@ -1,5 +1,5 @@
 .navStyling {
-  background-color: #201E1E;
+  background-color: #201e1e;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -20,4 +20,15 @@
     padding: 1rem;
     margin-right: 2rem;
   }
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.activeLink {
+  color: #55ec20;
+  text-decoration: none;
 }

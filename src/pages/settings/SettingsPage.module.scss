@@ -1,0 +1,158 @@
+.settingsPage {
+  width: min(100%, 22rem);
+  margin: 0 auto;
+  padding: 2.5rem 0.75rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 600px) {
+  .settingsPage {
+    width: min(100%, 32rem);
+    padding: 3rem 2rem 3rem;
+    gap: 2.5rem;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .settingsPage {
+    width: min(100%, 44rem);
+    padding: 4rem 4rem 4rem;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+.heading {
+  text-align: center;
+  color: #ebebeb;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  word-break: break-word;
+}
+
+.toggleRow {
+  width: 100%;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.toggleLabel {
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  min-height: 2.5rem;
+}
+
+.toggleSwitch {
+  width: 3.9rem;
+  height: 1.875rem;
+  background: #201e1e;
+  border-radius: 64px;
+  position: relative;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggleCircle {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  background: #55ec20;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: left 0.2s;
+}
+
+.toggleSwitch.on .toggleCircle {
+  left: 2rem;
+}
+
+.regionSection {
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.regionDropdown {
+  width: 7rem;
+  background: #201e1e;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.regionLabel {
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.25rem;
+}
+
+.regionList {
+  width: 7rem;
+  background: #201e1e;
+  border-radius: 8px;
+  margin: 0.25rem auto 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.regionItem {
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0.5rem 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.regionItem.selected {
+  color: #55ec20;
+}
+
+.regionArrow {
+  width: 1.25rem;
+  height: 0.5rem;
+  display: inline-block;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.regionArrow.open {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.regionArrow svg {
+  display: block;
+}

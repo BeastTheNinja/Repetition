@@ -1,0 +1,39 @@
+.listWrapper {
+  width: min(100%, 19.5rem);
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.row {
+  min-height: 2.25rem;
+  border-radius: 0.5rem;
+  background: #201e1e;
+  box-shadow: 0 0 0.5rem 0.125rem rgba(91, 91, 91, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+.timeCell,
+.priceCell {
+  width: 8.5rem;
+  min-height: 2.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.timeCell {
+  color: #f5f5f5;
+}
+
+.priceCell {
+  color: #ffd645;
+}
