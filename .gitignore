@@ -35,5 +35,6 @@ dev-dist
 !.env.example
 
 sw.js
+registerSW.js
 workbox-*.js
 Thumbs.db
