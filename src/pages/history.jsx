@@ -1,3 +1,6 @@
+// Side: History
+// Lader brugeren vælge en dato og se elpriser for den dag
+// Henter data via useApi og viser liste over priser
 import { useState } from "react";
 import { useApi } from "../hook/useApi";
 import { PriceList } from "../components/PriceList/PriceList";

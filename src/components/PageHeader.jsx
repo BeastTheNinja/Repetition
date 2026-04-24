@@ -1,3 +1,6 @@
+// Komponent: PageHeader
+// Viser en fælles header for siderne med mulighed for titel og indstillingsknap
+// Bruges til at give ensartet top-bar på tværs af appen
 // Fælles side-header med indstillingsikon og evt. overskrift
 import { SettingsCogButton } from "../components/SettingsCog/SettingsCogButton";
 

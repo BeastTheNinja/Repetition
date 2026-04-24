@@ -1,3 +1,6 @@
+// Side: Overview
+// Viser oversigt over dagens elpriser, samt minimum og maksimum
+// Henter data via useApi og viser PriceList og PriceExtremes
 import { useMemo } from "react";
 import { useApi } from "../hook/useApi";
 import { PriceList } from "../components/PriceList/PriceList";

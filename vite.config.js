@@ -1,3 +1,6 @@
+// Vite konfigurationsfil
+// Indeholder opsætning for React, PWA-plugin og manifest til web app
+// Her defineres bl.a. hvilke plugins der bruges og hvordan PWA'en opfører sig
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";

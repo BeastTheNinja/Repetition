@@ -1,3 +1,5 @@
+// Hjælpefunktion til at formatere dato og priszone til API-kald
+// Returnerer objekt med år, måned, dag og priszone (bruges i useApi)
 export const createApiOptions = ({
   date = new Date(),
   priceClass = "DK1",

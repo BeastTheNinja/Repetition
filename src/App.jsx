@@ -1,3 +1,6 @@
+// Hovedapplikationskomponent for elpris PWA
+// Indeholder routing og fælles layout (NavBar, Footer)
+// Viser forskellige sider afhængigt af URL (Now, History, Overview, Settings)
 import { BrowserRouter, Route, Router, Routes } from "react-router";
 import { Now } from "./pages/now";
 import { History } from "./pages/history";

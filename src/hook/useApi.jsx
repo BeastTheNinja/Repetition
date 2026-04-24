@@ -1,3 +1,6 @@
+// Custom React hook til at hente elpriser fra ekstern API
+// Returnerer nuværende pris, alle priser for valgt dag, loading og fejlstatus
+// Kan bruges på tværs af sider til at centralisere datahentning
 import { useEffect, useMemo, useState } from "react";
 import { findTimeWindow } from "../utils/findTimeWindow";
 import { createApiOptions } from "../utils/createApiOptions";

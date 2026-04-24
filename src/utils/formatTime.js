@@ -1,3 +1,5 @@
+// Hjælpefunktion til at formatere timestamp til timevisning (fx '08:00')
+// Bruges til at vise tidspunkter i UI på en ensartet måde
 export const formatTime = (timeStamp) => {
   const timeDate = new Date(timeStamp);
   let hours = timeDate.getHours();

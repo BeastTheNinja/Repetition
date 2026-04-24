@@ -1,3 +1,6 @@
+// Side: Now
+// Viser elprisen lige nu for valgt region (standard DK1)
+// Henter data via useApi og viser loading, fejl og pris
 import { formatTime } from "../utils/formatTime";
 import { useApi } from "../hook/useApi";
 import style from "./now.module.scss";
