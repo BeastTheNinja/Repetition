@@ -1,7 +1,7 @@
 {
   "name": "Electricity Prices",
   "short_name": "Elpris",
-  "description": "Se aktuelle og historiske elpriser.",
+  "description": "Se aktuelle og tidligere elpriser.",
   "lang": "da",
   "start_url": "/",
   "scope": "/",
