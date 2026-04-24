@@ -25,7 +25,10 @@ export const OverView = () => {
 
   return (
     <>
-      <SettingsCogButton />
+      <div
+        style={{ display: "flex", justifyContent: "flex-end", width: "100%" }}>
+        <SettingsCogButton />
+      </div>
       <section className={style.overviewPage}>
         <h1 className={style.title}>Oversigt</h1>
 

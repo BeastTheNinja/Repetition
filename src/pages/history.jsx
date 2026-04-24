@@ -24,7 +24,10 @@ export const History = () => {
 
   return (
     <>
-      <SettingsCogButton />
+      <div
+        style={{ display: "flex", justifyContent: "flex-end", width: "100%" }}>
+        <SettingsCogButton />
+      </div>
       <section className={style.historyPage}>
         <h1 className={style.title}>Historik</h1>
 

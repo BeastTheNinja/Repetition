@@ -1,14 +1,15 @@
 import { formatTime } from "../utils/formatTime";
 import { useApi } from "../hook/useApi";
 import style from "./now.module.scss";
-import { SettingsCogButton } from "../components/SettingsCog/SettingsCogButton";
+import { PageHeader } from "../components/PageHeader";
+import { StatusText } from "../components/StatusText";
 
 export const Now = () => {
   const { nowTime, loading, error } = useApi({ priceClass: "DK1" });
 
   return (
     <>
-      <SettingsCogButton />
+      <PageHeader />
       <section className={style.nowStyling}>
         <h1>Elprisen lige nu</h1>
 
@@ -25,12 +26,12 @@ export const Now = () => {
           </div>
         </div>
 
-        {error ?
-          <h4>Kunne ikke hente data</h4>
-        : <h4>
+        <StatusText loading={loading} error={error} />
+        {!loading && !error && (
+          <h4>
             {formatTime(nowTime?.time_start)} - {formatTime(nowTime?.time_end)}
           </h4>
-        }
+        )}
       </section>
     </>
   );
